@@ -10,9 +10,11 @@
     "build": "npx shadow-cljs release frontend"
   },
   "dependencies": {
+    "@tailwindcss/cli": "^4.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-refresh": "^0.16.0",
-    "react-router-dom": "^6.28.2"
+    "react-router-dom": "^6.28.2",
+    "tailwindcss": "^4.0.0"
   }
 }

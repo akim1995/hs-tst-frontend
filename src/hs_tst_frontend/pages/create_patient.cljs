@@ -31,7 +31,7 @@
                   (d/input {:id "dob" :required true :name "date-of-birth" :type "date" :class input-classes}))
 
                  (d/div (d/label {:for "health-insurance-number" :class label-classes} "Health Insurance Number *")
-                        (d/input {:id :required true "health-insurance-number" :placeholder "xxxx-xxxx-xxxx-xxxx" :type "text" :name "health-insurance-number" :class input-classes}))
+                        (d/input {:id "health-insurance-number" :required true :placeholder "xxxx-xxxx-xxxx-xxxx" :type "text" :name "health-insurance-number" :class input-classes}))
                  (d/div
                   (d/label {:for "address" :class label-classes} "Address")
                   (d/textarea {:id "address" :name "address" :class input-classes}))
