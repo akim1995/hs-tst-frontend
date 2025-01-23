@@ -1,0 +1,15 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src"
+  "test"]
+
+ :dependencies
+ [
+  ;; [cider/cider-nrepl "0.28.7"] ;; Do i need this?
+  [lilactown/helix "0.2.1"]]
+
+ :dev-http {8080 "public"}
+ :builds
+ {:frontend {:devtools {:repl-pprint true :reload-strategy :full}
+             :target :browser
+             :modules {:main {:init-fn hs-tst-frontend.app/init}}}}}
