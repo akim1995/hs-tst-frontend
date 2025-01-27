@@ -14,7 +14,7 @@
                                       header)))))
                   (d/tbody {:class "divide-y divide-gray-200"}
                            (for [patient patients]
-                             (d/tr {:on-click #(on-patient-select (:id patient)) :key (:id patient) :class "odd:bg-gray-50 cursor-pointer"}
+                             (d/tr {:on-click #(on-patient-select (:id patient)) :key (:id patient) :class "hover:bg-blue-50 odd:bg-gray-50 cursor-pointer"}
                                    (d/td {:class "whitespace-nowrap px-4 py-2 font-medium text-gray-900"} (:name patient))
                                    (d/td {:class "whitespace-nowrap px-4 py-2 font-medium text-gray-900"} (:gender patient))
                                    (d/td {:class "whitespace-nowrap px-4 py-2 font-medium text-gray-900"} (:date-of-birth patient))
